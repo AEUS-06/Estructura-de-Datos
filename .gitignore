@@ -1,0 +1,41 @@
+# --------------------------------------
+# Archivos compilados
+# --------------------------------------
+*.class
+
+# Archivos empaquetados
+*.jar
+*.war
+*.ear
+
+# --------------------------------------
+# Directorios de build
+# --------------------------------------
+/build/
+/dist/
+/out/
+/nbbuild/
+/nbdist/
+
+# --------------------------------------
+# Configuración privada de NetBeans
+# --------------------------------------
+/nbproject/private/
+/nbactions.xml
+/nb-configuration.xml
+
+# --------------------------------------
+# Archivos del sistema
+# --------------------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------------------
+# Archivos comprimidos
+# --------------------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
