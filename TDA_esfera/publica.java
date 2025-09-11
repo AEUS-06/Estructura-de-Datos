@@ -2,8 +2,9 @@ package TDA_esfera;
 
 public class publica {
     public static void main(String[] args) {
-        TDA_esfera esfera1 = new TDA_esfera(5.0);
+        TDA_esfera esfera1 = new TDA_esfera(5.0); //instaceacion del objeto
 
+        //impresion de metodos
         System.out.println("Radio: " + esfera1.getRadio());
         System.out.println("Diametro: " + esfera1.getDiametro());
         System.out.println("Circunferencia: " + esfera1.getCircunferencia());
