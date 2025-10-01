@@ -23,8 +23,8 @@ public class ListaEnteros {
 
     //eliminar un elemento en una posición específica
     public void eliminar(int posicion){
-        if (posicion >= 0 && posicion < contador){
-            for (int i = posicion; i < contador-1; i++){
+        if (posicion >= 0 && posicion < contador){//verificar que la posición es válida
+            for (int i = posicion; i < contador-1; i++){//recorrer desde la posición dada hasta el final
                 lista[i] = lista[i+1];  //desplazar elementos a la izquierda
             }
             contador--; //restar el contador
@@ -36,8 +36,8 @@ public class ListaEnteros {
 
     //obtener el valor en una posicion dada
     public int obtener(int posicion){
-        if (posicion >= 0 && posicion < contador){
-            return lista[posicion];
+        if (posicion >= 0 && posicion < contador){//verificar que la posición es válida
+            return lista[posicion];//retornar el valor en la posición dada
         }
         else {
             System.out.println("Posicion invalida");
@@ -47,8 +47,8 @@ public class ListaEnteros {
 
     //modificar el valor en una posicion dada
     public void modificar(int posicion, int nuevoValor){
-        if (posicion >= 0 && posicion < contador){
-            lista[posicion] = nuevoValor;
+        if (posicion >= 0 && posicion < contador){//verificar que la posición es válida
+            lista[posicion] = nuevoValor;//asignar el nuevo valor en la posición dada
         }
         else {
             System.out.println("Posicion invalida");
@@ -62,12 +62,12 @@ public class ListaEnteros {
 
     //ordenar la lista con algoritmo bbuble sort
     public void ordenar(){
-        for (int i=0; i < contador-1; i++){
-            for (int j=0; j < contador-i-1; j++){
-                if (lista[j] > lista[j+1]){
-                    int temp = lista[j];
-                    lista[j] = lista[j+1];
-                    lista[j+1] = temp;
+        for (int i=0; i < contador-1; i++){//recorrer toda la lista
+            for (int j=0; j < contador-i-1; j++){//recorrer desde el inicio hasta el final menos los ya ordenados
+                if (lista[j] > lista[j+1]){//comparar elementos 
+                    int temp = lista[j];//intercambiar si están en el orden incorrecto
+                    lista[j] = lista[j+1];//intercambiar
+                    lista[j+1] = temp;//intercambiar
                 }
             }
         }
@@ -76,8 +76,8 @@ public class ListaEnteros {
     //mostrar todos los elementos de la lista 
     public void mostrar(){
         System.out.print("Elementos en la lista: ");
-        for (int i=0; i < contador; i++){
-            System.out.print(lista[i] + " ");
+        for (int i=0; i < contador; i++){// a recorriendo 
+            System.out.print(lista[i] + " ");//va antando los valores 
         }
         System.out.println();
     }
