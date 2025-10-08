@@ -3,10 +3,10 @@ package examen2;
 import java.util.Scanner;
 
 public class examen2 {
-
+    private Scanner sc = new Scanner(System.in); // objeto Scanner para entrada de datos
+    
     // Método para ingresar el número de líneas
     public int ingresarLineas() {
-        Scanner sc = new Scanner(System.in);// objeto Scanner
         System.out.print("Ingrese el número de filas del triángulo: ");// mensaje al usuario
         return sc.nextInt();//retorna el numero ingresado
     }
